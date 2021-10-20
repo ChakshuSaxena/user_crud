@@ -1,0 +1,35 @@
+<a href= '/users/new'>form</a>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Address</th>
+  </tr>
+  <%@users.each do |user|%>
+  <tr>
+    <td><%=user.name%></td>
+    <td><%=user.email%></td>
+    <td><%=user.phone_no%></td>
+    <td><%=user.address%></td>
+  </tr>
+  <%end%>
+</table>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
