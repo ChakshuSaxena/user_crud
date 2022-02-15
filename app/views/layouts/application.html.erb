@@ -26,6 +26,9 @@
       // _kiq.push(['qualaroo_user_age', 18]);
 
     </script>
+    <script type="text/javascript" charset="utf-8">
+        _kiq.push(['identify', '<%= Faker::Internet.email %>']);
+    </script>
 
     <%= yield %>
   </body>
