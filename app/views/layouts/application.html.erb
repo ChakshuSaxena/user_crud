@@ -30,6 +30,12 @@
         _kiq.push(['identify', '<%= Faker::Internet.email %>']);
     </script>
 
+    <script type="text/javascript" charset="utf-8">
+      _kiq.push(['eventHandler', 'showhideNudge', function(){
+         console.log("***** event change working *******")
+      }]);
+    </script>
+
     <%= yield %>
   </body>
 </html>
