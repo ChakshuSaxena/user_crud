@@ -25,7 +25,8 @@
       _kiq.push(['set', {
       'BrandName': "False",
       'BrandRelated': "False",
-      'controller': '<%=params[:controller]%>'
+      'PageType': 'Users'
+
       }]);
       _kiq.push(['identify', '<%= Faker::Internet.email %>']);
       _kiq.push(['eventHandler', 'showhideNudge', function(){
