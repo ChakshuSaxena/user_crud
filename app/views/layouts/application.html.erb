@@ -26,13 +26,18 @@
       'BrandName': "False",
       'BrandRelated': "False",
       'PageType': 'Users'
-
       }]);
       _kiq.push(['identify', '<%= Faker::Internet.email %>']);
       _kiq.push(['eventHandler', 'showhideNudge', function(){
          console.log("***** event change working *******")
       }]);
 
+    </script>
+    <script type="text/javascript" charset="utf-8">
+      _kiq.push(['eventHandler', 'close', function(){
+        // Execute the following function when the survey has been closed
+        document.cookie="qualaroo_user_survey_display=No";
+      }]);
     </script>
 
     <%= yield %>
