@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   get '/users' => 'users#index'
   get '/users/new' => 'users#new'
+  get '/contact_us' => 'home#contact_us'
 end
